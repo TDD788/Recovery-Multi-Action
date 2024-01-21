@@ -1,4 +1,4 @@
-name: Recovery Build (Legacy)
+name: Legacy-Action
 
 on:
   workflow_dispatch:
