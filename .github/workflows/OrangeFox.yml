@@ -1,4 +1,4 @@
-name: OrangeFoxRP
+name: OrangeFox-Action
 
 on:
   workflow_dispatch:
