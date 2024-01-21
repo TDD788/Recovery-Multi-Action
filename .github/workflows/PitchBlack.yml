@@ -1,4 +1,4 @@
-name: PitchBlack
+name: PitchBlack-Action
 
 on:
   workflow_dispatch:
