@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/TDD788/A12s_Tree'
+        default: 'https://github.com/TDD788/A12s_DevTree'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'android-12.1'
+        default: 'master'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
@@ -68,6 +68,7 @@ jobs:
     - name: Prepare the build environment
       run: |
         sudo apt install git aria2 -y
+        sudo apt install nodejs
         git clone https://gitlab.com/OrangeFox/misc/scripts
         cd scripts
         sudo bash setup/android_build_env.sh
