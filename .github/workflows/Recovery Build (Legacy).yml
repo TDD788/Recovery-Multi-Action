@@ -169,6 +169,6 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
         path: workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ github.event.inputs.BUILD_TARGET }}.img
-        name: twrp-3.7.0_9-0-10s 
+        name: twrp-3.7.0_9-0-a10s 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
