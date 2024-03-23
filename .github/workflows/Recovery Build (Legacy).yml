@@ -164,5 +164,11 @@ jobs:
           Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
           Device: ${{ github.event.inputs.DEVICE_NAME }}
           Target: ${{ github.event.inputs.BUILD_TARGET }}.img
+
+    - name: Upload Recovery
+      uses: actions/upload-artifact@v3.0.0
+      with:
+        path: workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ github.event.inputs.BUILD_TARGET }}.img
+        name: twrp-3.7.0_9-0-${{ github.event.inputs.DEVICE_NAME }} 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
